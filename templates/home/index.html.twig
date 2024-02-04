@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{parent()}} | Accueil {% endblock %}
+
+{% block body %}
+<main>
+        <div class="hero_text">
+                <div class="line1">
+                         <h1>BASKET MABB</h1> <hr>
+                </div>
+                <div class="line2">
+                        <h2>DYNAMIQUE SLAM</h2>
+                        <p>Exploitez les avantages du dribble <br>avec agilité et détermination. </p>
+                </div>
+                <div class="line3">
+                        <p>Élevez votre jeu à chaque rebond <br>avec la Mabb, source d'inspiration.</p>
+                        <h2>UNION FORTE, PASSION PURE</h2>
+                </div>
+                <div class="line4">
+                        <h3>Explorez Mabb</h3>
+                </div>
+        </div>
+</main>
+<section>
+        <div class="container about">
+                <div class="about__title">
+                <h2>Qui sommes-nous ?</h2>
+                </div>
+                <div class="about__text">
+                    <p>
+                    Bienvenue à Mabb, la Métropole Amiénoise de Basket-Ball, bien plus qu'une simple institution, mais une entreprise passionnée partageant un amour profond pour le basket-ball. Nous sommes animés avec un groupe de visionnaires animés par la volonté de promouvoir ce sport dynamique au sein de notre communauté. Fondée sur des principes solides et un engagement indéfectible envers l'excellence, Mabb a tracé son chemin pour devenir une référence incontournable dans le monde du basket-ball.
+                    </p>
+                </div>
+        </div>
+</section>
+<section id="objectives" class="objectives">
+        <div class="objectives__title">
+                <h3>Nos objectifs</h3>
+        </div>
+        <div class="objectives__content">
+                <div class="objectives__content__item ">
+                    <iconify-icon icon="bi:geo-fill" width="50"></iconify-icon>
+                    <h6> Expansion Géographique</h6>
+                    <p> Accroître notre présence en établissant des centres de formation dans des quartiers stratégiques, offrant un accès étendu à nos programmes et encourageant la participation de jeunes talents.</p>
+                </div>
+                <div class="objectives__content__item">
+                    <iconify-icon icon="heroicons:computer-desktop-solid" width="50"></iconify-icon>
+                    <h6>Développement Technologique</h6>
+                    <p> Moderniser nos méthodes en lançant une plateforme interactive en ligne, permettant aux participants d'accéder à des ressources éducatives et à des séances d'entraînement virtuelles..</p>
+                </div>
+                <div class="objectives__content__item">
+                    <iconify-icon icon="fluent:people-community-20-filled" width="50"></iconify-icon>
+                    <h6>Engagement Communautaire</h6>
+                    <p>Renforcer notre impact social en lançant des projets caritatifs, éducatifs et des programmes de sensibilisation, consolidant ainsi notre connexion avec la communauté locale.</p>
+                </div>
+        </div>
+</section>
+<section class="commitments">
+        <div class="commitments__text">
+                <p>Nous nous consacrons pleinement à l'offre de programmes de formation de qualité exceptionnelle. Ces derniers sont soigneusement encadrés par des professionnels , dont la passion débordante contribue à créer une expérience d'apprentissage enrichissante  pour tous nos participants.</p>
+        </div>
+</section>
+<section class="products">
+    <div class="products__item"><h2>NOS RECENTS CAMPS <br> DE BASKET :</h2></div>
+    <div class="products__item">
+            <img src="{{asset('/img/product.jpg')}}" alt="image produit" srcset="" class="">
+    </div>
+    <div class="products__item">
+            <img src="{{asset('/img/product2.jpg')}}" alt="image produit" srcset="">
+    </div>
+</section>
+<section class="exploits">
+        <div class="exploits__title">
+            <h3>NOS EXPLOITS  ET REALISATIONS</h3>
+        </div>
+        <div class="exploits__content">
+                <div class="exploits__content__item ">
+                        <div class="exploits__content__item__img">
+                                <img src="{{asset('/img/champs.jpg')}}">
+                        </div>
+                        <div class="exploits__content__item__text">
+                            <h2> Championnat Régional Remporté : Éclatante Victoire de l'Équipe Mabb</h2>
+                            <p> L'équipe Mabb a récemment marqué l'histoire du basket-ball régional en remportant de manière éclatante le championnat régional. À travers des mois d'entraînement intensif, de stratégies astucieuses sur le terrain et une cohésion d'équipe exceptionnelle, notre victoire reflète non seulement notre talent athlétique, mais également notre engagement indéfectible envers l'excellence. C'est un témoignage vivant de la manière dont la passion et l'effort collectif peuvent propulser une équipe vers le sommet, inspirant ainsi la prochaine génération de joueurs.</p>
+                           <a href="" class="btn btn-outline-light px-4">Voir plus</a>
+                        </div>
+                </div>
+                <div class="exploits__content__item item2">
+                        <div class="exploits__content__item__img">
+                                <img src="{{asset('/img/training.jpeg')}}">
+                        </div>
+                        <div class="exploits__content__item__text">
+                            <h2> Atelier de Formation à Succès : Enrichissement des Compétences des Jeunes Talents</h2>
+                            <p>Notre récent atelier de formation pendant les congés a été bien plus qu'une simple session d'entraînement. Il a été le théâtre d'une rencontre entre la passion du basket-ball et le désir de perfectionnement chez de jeunes talents prometteurs. À travers des séances interactives, des conseils personnalisés dispensés par des experts chevronnés et des exercices novateurs, nous avons créé un environnement propice à l'épanouissement des compétences individuelles. Ce succès n'est pas seulement mesuré par les dribbles et les tirs réussis, mais par la confiance renforcée et la croissance personnelle de chaque participant, incarnant ainsi notre engagement à être plus qu'un simple club, mais une famille qui cultive le potentiel de chacun.</p>
+                           <a href="" class="btn btn-outline-light px-4">Voir plus</a>                           
+                        </div>
+                </div>
+        </div>
+</section>
+<section class="quote">
+        <div class="quote__text">
+            <q>Le sport ne forge pas seulement le corps, il sculpte aussi l'âme. Dans l'effort et la persévérance, nous découvrons la véritable grandeur de l'esprit humain.</q>
+            <p> - Pierre de Coubertin -</p>
+        </div>
+</section>
+{% endblock %}

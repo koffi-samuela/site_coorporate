@@ -1,0 +1,147 @@
+@use '../abstracts/variables.scss' as v ;
+@use '../abstracts/mixins.scss' as m;
+
+.contact{
+    h2{
+        text-align: center;
+    }
+}
+.contactForm{
+    border-radius: 15px;
+    padding: 3vh 0;
+    margin: 3vh 0;
+    // background-color: red;
+    @include m.dflex(row,center,center);
+    
+    &__left{
+        // padding: 2vh 0;
+        height:75vh;
+        width: 30%;
+        background: url('../../../../public/img/contact_kobe.png');
+        background-size: cover;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        font-style: italic;
+        // width: 70%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: v.$font_inria;
+        text-transform: capitalize;
+    @include m.dflex(column,center,center);
+    gap: 2vh;
+
+    }
+    &__right{
+        background-color: v.$bg-200;
+        width: 50%;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        // margin: 0 auto;
+        height:75vh;
+        form{
+            padding: 6vh 1vw;
+            width: 80%;
+            margin:  auto;
+        .form-check{
+            font-size: 12px;
+        }
+        }
+    }
+    
+}
+.btn_submit{
+    margin: 2vh 0;
+    padding: 1vh 1.5vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: v.$primary-300;
+    color: white;
+}
+// textarea{
+
+// }
+
+
+@media  screen and (max-width: 768px) {
+    .contactForm{
+        // border-radius: 15px;
+        // padding: 3vh 0;
+        // margin: 3vh 0;
+        // background-color: red;
+        @include m.dflex(column-reverse,center,center);
+        
+        &__left{
+            // padding: 2vh 0;
+            height:25vh;
+            width: 100%;
+            background: url('../../../../public/img/contact_kobe.png');
+            background-size: cover;
+            font-size: 1.2rem;
+        @include m.dflex(column,center,center);
+        gap: 2vh;
+    
+        }
+        &__right{
+            width: 100%;
+            height:65vh;
+            form{
+                padding: 3vh 1vw;
+                width: 80%;
+                margin:  auto;
+            .form-check{
+                font-size: 12px;
+            }
+            }
+        }
+        
+    }
+    .btn_submit{
+        margin: 2vh 0;
+        padding: 1vh 1.5vw;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: v.$primary-300;
+        color: white;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .contactForm{
+        @include m.dflex(column,center,center);        
+        &__left{
+            height:25vh;
+            width: 100%;
+            background: url('../../../../public/img/contact_kobe.png');
+            background-size: cover;
+            font-size: 1.2rem;
+        @include m.dflex(column,center,center);
+        gap: 2vh;
+    
+        }
+        &__right{
+            width: 100%;
+            height:auto;
+            form{
+                padding: 3vh 1vw;
+                width: 80%;
+                margin:  auto;
+            .form-check{
+                font-size: 12px;
+            }
+            }
+        }
+        
+    }
+    .btn_submit{
+        margin: 2vh 0;
+        padding: 1vh 1.5vw;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: v.$primary-300;
+        color: white;
+    }   
+}

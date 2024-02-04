@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{parent()}} | A propos  {% endblock %}
+
+{% block body %}
+<section>
+    <div class="about_title">
+        <h1>A propos de nous</h1>
+    </div>
+</section>
+<section class="history">
+    <div class="history__content">
+            <div class="history__content__img">
+                <img src="{{asset('/img/history.jpg')}}" alt="Histoire"/>
+            </div>
+            <div class="history__content__text">
+                <div class="history_title">
+                    <h5>NOTRE HISTOIRE</h5>
+                </div>
+                <p>Mabb a été fondée par Willi Dufosse avec la vision audacieuse de créer un lieu où la passion pour le basket-ball pourrait prospérer. De ses modestes débuts, l'institution est devenue un pilier du basket-ball dans la Métropole Amiénoise. Aujourd'hui, l'histoire de Mabb est une saga d'athlètes formidables, d'événements inoubliables et d'une communauté unie par l'amour du jeu.</p>
+                <img src="{{asset('/img/signature.png')}}" alt="" class="signature">
+            </div>           
+    </div>
+</section>
+<section class="securities">
+<div class="securities__title">
+    <h3>Nos valeurs </h4>
+</div>
+        <div class="securities__content">
+                <div class="securities__content__item">
+                    <iconify-icon icon="solar:basketball-linear" width="40"></iconify-icon>
+                    <h6>Passion du Basket-Ball</h6>
+                    <p> La passion pour le basket-ball est notre moteur, inspirant chaque aspect de notre engagement envers vous.</p>
+                </div>
+                <div class="securities__content__item">
+                    <iconify-icon icon="icons8:diploma-1" width="40"></iconify-icon>
+                    <h6>Excellence Inébranlable</h6>
+                    <p> Aspirant constamment à l'excellence, nous nous efforçons d'atteindre des normes inégalées pour vous.</p>
+                </div>
+                <div class="securities__content__item">
+                    <iconify-icon icon="fluent:people-team-16-regular" width="40"></iconify-icon>
+                    <h6>Esprit d'Équipe</h6>
+                    <p>  Unis par l'esprit d'équipe, nous créons une communauté où chacun se sent soutenu et valorisé.</p>
+                </div>
+                <div class="securities__content__item">
+                    <iconify-icon icon="fluent-mdl2:party-leader" width="40"></iconify-icon>
+                    <h6> Développement Holistique</h6>
+                    <p>  Au-delà des compétences, nous façonnons des individus exceptionnels en encourageant  le leadership.</p>
+                </div>
+        </div>
+</section>
+<section  class="missions">
+        <div class="missions__title">
+                <h3>Notre Mission</h3>
+        </div>
+        <div class="missions__content">
+            <div class="missions__content__item">
+                <div class="item_img">
+                    <img src="{{asset('/img/missions.jpg')}}" alt="Histoire"/>
+                </div>
+                <div class="item_text">
+                    <h5> Inspirer la Passion du Basket-Ball</h5>
+                    <p> Éveiller et nourrir la passion du basket-ball chez les individus de tous âges en offrant des programmes et des événements qui captivent et motivent.</p>
+                    <button type="button" class="view_more"> <a href="https://www.courrier-picard.fr/id212663/article/2021-07-14/trois-etoiles-pour-les-basketteurs-de-la-metropole-amienoise" target="_blank">voir plus</a></button>
+                </div>
+            </div>
+            <div class="missions__content__item item2">
+                <div class="item_text">
+                    <h5>Former des Athlètes Accomplis</h5>
+                    <p>Fournir des programmes de formation de qualité pour former des athlètes accomplis, développant non seulement leurs compétences techniques, mais également leurs valeurs personnelles.</p>
+                    <button type="button" class="view_more"><a href="https://www.courrier-picard.fr/id362744/article/2022-11-21/le-president-de-la-mabb-solidaire" target="_blank"></a>voir plus</button>
+                </div>
+                <div class="item_img">
+                    <img src="{{asset('/img/reese.jpg')}}" alt="Histoire"/>
+                </div>
+            </div>
+            <div class="missions__content__item">
+                <div class="item_img">
+                    <img src="{{asset('/img/team.jpg')}}" alt="Histoire"/>
+                </div>
+                <div class="item_text">
+                    <h5>Bâtir une Communauté Engagée</h5>
+                    <p>Créer une communauté solidaire et engagée autour du basket-ball, favorisant l'échange d'idées, le soutien mutuel et la croissance collective de tous ses membres.</p>
+                    <button type="button" class="view_more"><a href="https://www.courrier-picard.fr/id362744/article/2022-11-21/le-president-de-la-mabb-solidaire" target="_blank"></a>voir plus</button>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock %}

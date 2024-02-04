@@ -1,0 +1,31 @@
+@use '../abstracts/variables.scss' as v ;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-color:v.$bg-100 ;
+    // background-color:red ;
+    color: white;
+    // color: #F0EDCF;
+
+
+}
+img{
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+section{
+    width: 90%;
+    margin: 8vh auto;
+}
+button{
+    color: white;
+}
+h1,h2,h3,h4{
+    font-family: v.$font_inria;
+
+}

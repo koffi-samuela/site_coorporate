@@ -2,16 +2,99 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}MABB{% endblock %}</title>
+        <link rel="icon" href="{{asset('/img/mabb1.png')}}">
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+             
         {% endblock %}
 
         {% block javascripts %}
-{% block importmap %}{{ importmap('app') }}{% endblock %}
+            {{ encore_entry_script_tags('app') }}
+{# {% block importmap %}{{ importmap('app') }}{% endblock %} #}
         {% endblock %}
     </head>
     <body>
+        {% block header %}
+        <header>
+            <nav class="nav fixed-top">
+                <div class="nav__left">
+                    <a href="{{path('app_home')}}"> 
+                    <img src="{{asset('/img/mabb1.png')}}" alt="" srcset="" class="logo">
+                    </a>
+                </div>
+                <div class="nav__right">
+                        <a href="{{path('app_home')}}" class="nav_link"> Accueil</a>
+                        <a href="{{path('app_services')}}"class="nav_link"> Services</a>
+                        <a href="{{path('app_about')}}"class="nav_link">A propos</a>
+                        <a href="contact" class="link_contact"class="nav_link">Contactez-nous</a>
+                </div>
+                <div class="BurgermenuIcone">
+                                <button class="btn btn-outline menu_burger"> <iconify-icon icon="charm:menu-hamburger"  width="40" style="color: rgb(255, 255, 255);"></iconify-icon></button>
+                </div>
+                <div class="burgerMenu">
+                        <div class="close">
+                            <h4>Menu</h4>
+                            <button class="btn btn-outline closed"><iconify-icon icon="material-symbols:close-rounded" style="color: rgb(255, 255, 255);" width="40"></iconify-icon></button>
+                        </div>
+                        <ul>
+                            <li><a href="{{path('app_home')}}" class="nav_link"> Accueil</a></li>
+                            <li> <a href="{{path('app_services')}}"class="nav_link"> Services</a></li>
+                            <li><a href="{{path('app_about')}}"class="nav_link">A propos</a></li>
+                            <li> <a href="contact" class="link_contact"class="nav_link">Contactez-nous</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        {% endblock %}
+
         {% block body %}{% endblock %}
+        {% block footer %}
+        <footer>
+            <div class="columns">
+                    <div class="columns__left">
+                        <img src="{{asset('/img/mabb1.png')}}" alt="" srcset="" class="logo">
+
+                    </div>
+                    <div class="columns__center">
+                            <h5>Navigation</h5>
+                            <a href="">Services</a>
+                            <a href="">Accueil</a>
+                            <a href="">A propos</a>
+                            <a href="">contactez-nous</a>
+                    </div>
+                    <div class="columns__center">
+                            <h5>Confidentialité</h4>
+                            <a href="">Politique de confidentialité</a>
+                            <a href="">Conditions d'utilisation</a>
+                            <a href="">Cookie</a>
+                            <a href="">FAQ</a>
+                    </div>
+                    <div class="columns__right">
+                        <h5>Adresse</h5>
+                        <p>
+                        <a href="https://www.bing.com/ck/a?!&&p=c11a310185f5f514JmltdHM9MTcwNjc0NTYwMCZpZ3VpZD0yOTk5ZjJmMi1jMzhhLTZmMTQtMWE1NS1lMTBkYzIzMzZlNTYmaW5zaWQ9NTQ5NQ&ptn=3&ver=2&hsh=3&fclid=2999f2f2-c38a-6f14-1a55-e10dc2336e56&u=a1L21hcHM_Jm1lcGk9MTA5fn5Ub3BPZlBhZ2V-QWRkcmVzc19MaW5rJnR5PTE4JnE9TUFCQiZzcz15cGlkLllOMjAwMHgxNDgxMjM3NTc4ODkyMDY2MDg2JnBwb2lzPTQ5LjkxNzE2MDAzNDE3OTY5XzIuMjU1NjIyODYzNzY5NTMxMl9NQUJCX1lOMjAwMHgxNDgxMjM3NTc4ODkyMDY2MDg2fiZjcD00OS45MTcxNn4yLjI1NTYyMyZ2PTImc1Y9MSZGT1JNPU1QU1JQTA&ntb=1">AV du Languedoc, 80000 Amiens </a>    
+                        </p>
+                        <h6>Suivez nous :</h6>
+                        <div class="social_media">
+                        <iconify-icon icon="bi:instagram"></iconify-icon>
+                        <iconify-icon icon="bi:instagram"></iconify-icon>
+                        <iconify-icon icon="bi:instagram"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+        <div class="copy">
+            <p>2024 &copy; MABB - Tous droits réservés</p>
+        </div>
+        </footer>
+        {% endblock %}
     </body>
 </html>

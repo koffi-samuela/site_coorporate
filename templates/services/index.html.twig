@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{parent()}} | Services {% endblock %}
+
+{% block body %}
+<section>
+    <div class="services_banner">
+        <h1 class="text-center"> Nos Services</h1>
+    </div>
+
+</section>
+<section class="services_desc">
+    <div class=" services_desc__content text">
+        <h4>Expérience Basket-Ball Exceptionnelle avec Mabb</h4>
+        <h6>Chez Mabb, nous façonnons bien plus qu'une simple expérience de basket-ball. Nous offrons un univers où la passion et la compétence  convergent pour créer une aventure inoubliable. </h6>
+        <p>Nos services sont conçus avec dévouement, visant à transcender les simples séances d'entraînement pour offrir une expérience complète du basket-ball. Que vous soyez un débutant cherchant à maîtriser les bases ou un joueur chevronné aspirant à atteindre de nouveaux sommets, nos services sont conçus pour répondre à vos besoins spécifiques. une expérience où la passion prend vie, les compétences s'aiguisent, et la communauté prospère. Bienvenue chez Mabb, où chaque rebondissement est une opportunité de grandir, apprendre et s'épanouir dans le monde du basket-ball.</p>
+    </div>
+    <div class=" services_desc__content year">
+        <h1>17</h1>
+        <h3>ANNEES</h3>
+        <P class="text-white">Que la Mabb exerce dans la passion  <br>  des jeunes </P>
+    </div>
+</section>
+<section class="solutions">
+        <h2>Nos Solutions</h2>
+        <div class="services_solutions">
+            <div class="services_solutions__img">
+                 <img src="{{asset('/img/mamorre.jpg')}}" alt="image produit" srcset="">
+            </div>
+            <div class="services_solutions__text ">
+                 <div class="services_solutions__desc bg_primary">
+                        <p>Mabb propose des programmes de formation sur mesure adaptés à tous les niveaux de compétence. Nos entraîneurs expérimentés guident chaque joueur, du débutant souhaitant maîtriser les bases au joueur chevronné aspirant à l'excellence.</p>
+                 </div>
+                <div class="services_solutions__desc bg-colored">
+                        <p>Participez à des tournois excitants et à des compétitions amicales organisés par Mabb pour stimuler la passion du basket-ball. Ces événements offrent une occasion unique de perfectionner vos talents dans un environnement compétitif tout en renforçant les liens au sein de la communauté Mabb.</p>
+                 </div>
+            </div>
+        </div>
+</section>
+<section class="services_card">
+    <div class="cards">
+        <div class="services_card__item">
+            <iconify-icon icon="fluent:people-community-20-filled" width="35"></iconify-icon>
+            <h5> Application Interactive de Formation en Ligne : </h5>
+            <p> Développement d'application interactive offrant des modules de formation en ligne pour les participants de Mabb. Cette solution permettra un accès facile à des ressources éducatives, des vidéos d'entraînement et des conseils personnalisés, renforçant ainsi le développement des compétences.</p>
+        </div>
+        <div class="services_card__item">
+            <iconify-icon icon="fluent:people-community-20-filled" width="35"></iconify-icon>
+            <h5>Système de Gestion des Adhésions et Inscriptions : </h5>
+            <p> Mise  en place d'un système numérique pour gérer les adhésions, les inscriptions aux ateliers et les paiements en ligne. Simplification du processus administratif pour les participants et améliorez l'efficacité de la gestion des activités de Mabb.</p>
+        </div>
+        <div class="services_card__item">
+            <iconify-icon icon="fluent:people-community-20-filled" width="35"></iconify-icon>
+            <h5> Plateforme Communautaire en Ligne :</h5>
+            <p> Création d'une plateforme en ligne dédiée à la communauté Mabb. Facilitation de la communication entre les membres, partagez des actualités, des photos et encouragez l'interaction, renforçant ainsi les liens au sein de la communauté.</p>
+        </div>
+        <div class="services_card__item">
+            <iconify-icon icon="fluent:people-community-20-filled" width="35"></iconify-icon>
+            <h5>Programme de Parrainage Sportif : </h5>
+            <p> Lancement d'un programme de parrainage sportif où les joueurs plus expérimentés agissent en tant que mentors pour les nouveaux participants. Cette initiative favorise l'intégration, l'échange de connaissances et renforce le sentiment d'appartenance à la famille Mabb.</p>
+        </div>
+    </div>
+</section>
+{# <section class="turnover">
+    <h2>NOS CHIFFRES</h2>
+    <div class="turnover__content">
+            <div class="turnover__content__item">
+                <h3>25</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, earum autem saepe voluptate voluptatum corrupti dolores ducimus harum quidem eveniet repellat sit, ullam porro veritatis, accusamus hic laudantium recusandae possimus?</p>
+            </div>
+            <div class="turnover__content__item">
+                <h3>25</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, earum autem saepe voluptate voluptatum corrupti dolores ducimus harum quidem eveniet repellat sit, ullam porro veritatis, accusamus hic laudantium recusandae possimus?</p>
+            </div>
+                        <div class="turnover__content__item">
+                <h3>25</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, earum autem saepe voluptate voluptatum corrupti dolores ducimus harum quidem eveniet repellat sit, ullam porro veritatis, accusamus hic laudantium recusandae possimus?</p>
+
+    </div>
+</section> #}
+{# <section class"solutions_text_final"> 
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi facilis, vel et velit unde tenetur facere quas quis, repudiandae voluptates iusto excepturi. Soluta, provident necessitatibus sequi veritatis ullam alias! Provident!</p>
+</section> #}
+
+{% endblock %}
