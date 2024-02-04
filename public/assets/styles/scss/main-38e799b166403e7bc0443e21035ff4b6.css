@@ -1,0 +1,12 @@
+@use './layout.scss';
+@use './base/reset';
+@use './pages/home';
+@use './pages/contact';
+@use './pages/services';
+@use './pages/about';
+// @use './layout.scss';
+// @use './pages/about';
+// @use './pages/_contact.scss';
+// @use './pages/_home.scss';
+// @use './pages/_services.scss';
+
