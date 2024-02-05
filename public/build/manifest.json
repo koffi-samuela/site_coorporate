@@ -1,0 +1,9 @@
+{
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors-node_modules_core-js_modules_es_array_for-each_js-node_modules_core-js_modules_es_obj-5fa493.js": "/build/vendors-node_modules_core-js_modules_es_array_for-each_js-node_modules_core-js_modules_es_obj-5fa493.js",
+  "build/images/hero_img.png": "/build/images/hero_img.fbe8dc28.png",
+  "build/images/contact_kobe.png": "/build/images/contact_kobe.68271a2d.png",
+  "build/images/quote_img.png": "/build/images/quote_img.c58ba13a.png"
+}
