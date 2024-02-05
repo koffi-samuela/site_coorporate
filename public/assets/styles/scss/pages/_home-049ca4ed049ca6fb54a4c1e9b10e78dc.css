@@ -3,7 +3,7 @@
 
 
 main{
-    background: url('../../../../public/img/hero_img.png');
+    background: url('../../../../public/images/hero_img.png');
     height: 95vh;
     background-size: cover;
     background-attachment: fixed;
@@ -204,7 +204,7 @@ main{
 }
 .quote{
     margin: 0 ;
-    background: url('../../../../public/img/quote_img.png');
+    background: url('../../../../public/images/quote_img.png');
     width: 100%;
     height: 90vh;
     background-size: cover;
@@ -232,7 +232,7 @@ main{
 @media  screen and (max-width: 768px) {
 
     main{
-        background: url('../../../../public/img/hero_img.png');
+        background: url('../../../../public/images/hero_img.png');
         height: 50vh;
         .hero_text{
             .line1{
@@ -356,7 +356,7 @@ main{
     }
     .quote{
         margin: 0 ;
-        background: url('../../../../public/img/quote_img.png');
+        background: url('../../../../public/images/quote_img.png');
         width: 100%;
         height: 50vh;
         @include m.dflex(column,center,center);
@@ -381,7 +381,7 @@ main{
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     /* Vos styles pour les tablettes en mode paysage ici */
     main{
-        background: url('../../../../public/img/hero_img.png');
+        background: url('../../../../public/images/hero_img.png');
         height: 50vh;
         .hero_text{
             .line1{
@@ -501,7 +501,7 @@ main{
     }
     .quote{
         margin: 0 ;
-        background: url('../../../../public/img/quote_img.png');
+        background: url('../../../../public/images/quote_img.png');
         width: 100%;
         height: 40vh;
         @include m.dflex(column,center,center);

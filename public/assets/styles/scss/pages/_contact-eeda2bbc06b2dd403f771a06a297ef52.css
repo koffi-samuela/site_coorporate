@@ -17,7 +17,7 @@
         // padding: 2vh 0;
         height:75vh;
         width: 30%;
-        background: url('../../../../public/img/contact_kobe.png');
+        background: url('../../../../public/images/contact_kobe.png');
         background-size: cover;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
@@ -75,7 +75,7 @@
             // padding: 2vh 0;
             height:25vh;
             width: 100%;
-            background: url('../../../../public/img/contact_kobe.png');
+            background: url('../../../../public/images/contact_kobe.png');
             background-size: cover;
             font-size: 1.2rem;
         @include m.dflex(column,center,center);
@@ -114,7 +114,7 @@
         &__left{
             height:25vh;
             width: 100%;
-            background: url('../../../../public/img/contact_kobe.png');
+            background: url('../../../../public/images/contact_kobe.png');
             background-size: cover;
             font-size: 1.2rem;
         @include m.dflex(column,center,center);
